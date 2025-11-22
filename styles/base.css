@@ -1,0 +1,85 @@
+/* =========================================
+   Variables & Base Settings
+   ========================================= */
+:root {
+	--bg-color: #FAFAFA;
+	--text-main: #2C2C2C;
+	--text-sub: #52525b;
+	--accent-color: #0F172A;
+	--border-color: #E5E5E5;
+	--white: #FFFFFF;
+	--container-width: 1440px;
+	--side-padding: 24px;
+}
+
+@media (max-width: 1024px) {
+	:root {
+		--side-padding: 20px;
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Inter', 'Noto Sans JP', sans-serif;
+	background-color: var(--bg-color);
+	color: var(--text-main);
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	transition: 0.3s;
+}
+
+ul {
+	list-style: none;
+}
+
+/* Utility */
+.container {
+	max-width: var(--container-width);
+	margin: 0 auto;
+	padding: 0 var(--side-padding);
+}
+
+/* Common Buttons */
+.btn-primary {
+	background-color: var(--accent-color);
+	color: var(--white);
+	padding: 12px 28px;
+	border-radius: 6px;
+	font-weight: 500;
+	display: inline-block;
+}
+
+.btn-primary:hover {
+	background-color: #232D42;
+	transform: translateY(-1px);
+}
+
+.btn-secondary {
+	border: 1px solid var(--border-color);
+	padding: 12px 28px;
+	border-radius: 6px;
+	transition: 0.3s;
+	display: inline-block;
+}
+
+.btn-secondary:hover {
+	border-color: var(--accent-color);
+	background-color: var(--white);
+}
+
+.btn-primary.large,
+.btn-secondary.large {
+	padding: 14px 32px;
+	font-size: 1.05rem;
+}

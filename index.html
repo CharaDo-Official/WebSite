@@ -14,18 +14,93 @@
 	<meta property="og:title" content="CFEEL公式ホームページ" />
 	<meta property="og:type" content="website" />
 	<meta property="og:description" content="CFEELは皆様の生活をサポートするアプリケーションの開発を行っています。" />
-	<meta property="og:image" content="https://lh3.googleusercontent.com/pw/AP1GczM00PoABDD794FqSNuSXcmHSw7jHWSFYHuEMnTbVPDblj53e8dMdlFXd2sigtWmY73Wj04BPbo72_XpD9pkUQfrIgRVxZVt8cNdkseoAqDO9OfigQ5Sv-7NV4SPJZDTqx9GhRT4ALrKqXGV_WSuD7s=w512-h512-s-no-gm?authuser=0"/>
+	<meta property="og:image"
+		content="https://lh3.googleusercontent.com/pw/AP1GczM00PoABDD794FqSNuSXcmHSw7jHWSFYHuEMnTbVPDblj53e8dMdlFXd2sigtWmY73Wj04BPbo72_XpD9pkUQfrIgRVxZVt8cNdkseoAqDO9OfigQ5Sv-7NV4SPJZDTqx9GhRT4ALrKqXGV_WSuD7s=w512-h512-s-no-gm?authuser=0" />
 	<meta property="og:site_name" content="CFEEL公式ホームページ ホーム" />
 	<meta property="og:local" content="ja_JP" />
 	<!-- twitter card -->
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="CFEEL公式ホームページ" />
 	<meta name="twitter:description" content="CFEELは皆様の生活をサポートするアプリケーションの開発を行っています。" />
-	<meta name="twitter:image" content="https://lh3.googleusercontent.com/pw/AP1GczM00PoABDD794FqSNuSXcmHSw7jHWSFYHuEMnTbVPDblj53e8dMdlFXd2sigtWmY73Wj04BPbo72_XpD9pkUQfrIgRVxZVt8cNdkseoAqDO9OfigQ5Sv-7NV4SPJZDTqx9GhRT4ALrKqXGV_WSuD7s=w512-h512-s-no-gm?authuser=0" />
+	<meta name="twitter:image"
+		content="https://lh3.googleusercontent.com/pw/AP1GczM00PoABDD794FqSNuSXcmHSw7jHWSFYHuEMnTbVPDblj53e8dMdlFXd2sigtWmY73Wj04BPbo72_XpD9pkUQfrIgRVxZVt8cNdkseoAqDO9OfigQ5Sv-7NV4SPJZDTqx9GhRT4ALrKqXGV_WSuD7s=w512-h512-s-no-gm?authuser=0" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/header.css">
+	<link rel="stylesheet" href="styles/top.css">
 
 </head>
 
 <body>
+
+	<header class="header">
+		<div class="container header-inner">
+			<a href="/" class="logo"><img src="assets/cfeel_logo_header.png" alt="FocusWare" /></a>
+
+			<input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+			<label for="menu-toggle" class="menu-icon">
+				<span class="nav-icon"></span>
+			</label>
+
+			<nav class="nav">
+				<ul class="nav-list">
+					<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+
+					<li class="nav-item has-dropdown">
+						<a href="#" class="nav-link">Products</a>
+						<ul class="dropdown-menu">
+							<li><a href="#" class="dropdown-link">Task Master (ToDo)</a></li>
+							<li><a href="#" class="dropdown-link">Mind Note (Memo)</a></li>
+							<li><a href="#" class="dropdown-link">Focus Timer</a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+
+					<li class="nav-item mobile-cta">
+						<a href="#" class="btn-primary">Contact</a>
+					</li>
+				</ul>
+			</nav>
+
+			<a href="#" class="btn-primary desktop-cta">Contact</a>
+		</div>
+	</header>
+
+	<section class="hero">
+		<div class="container hero-content">
+			<h1 class="hero-title">Simplify your day,<br>Clarify your mind.</h1>
+			<p class="hero-description">
+				私たちは、日々のノイズを取り除くデスクトップアプリケーションを開発しています。<br>
+				思考を整理し、本当に大切なことに集中するためのツールを。
+			</p>
+			<div class="hero-buttons">
+				<a href="#" class="btn-primary large">Download Apps</a>
+				<a href="#" class="btn-secondary large">Learn More</a>
+			</div>
+		</div>
+
+		<div class="hero-image-wrapper">
+			<div class="dummy-ui">
+				<div class="ui-header">
+					<span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+				</div>
+				<div class="ui-body">
+					<div class="ui-sidebar"></div>
+					<div class="ui-main"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 </body>
 
 </html>

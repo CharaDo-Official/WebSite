@@ -1,0 +1,121 @@
+/* =========================================
+   Top Page Specific (Hero etc.)
+   ========================================= */
+.hero {
+	min-height: 90vh;
+	padding-top: calc(80px + 60px);
+	/* 80pxはheader-height */
+	padding-bottom: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.hero-title {
+	font-size: clamp(3rem, 6vw, 5.5rem);
+	font-weight: 700;
+	line-height: 1.1;
+	margin-bottom: 32px;
+	letter-spacing: -0.03em;
+	color: var(--accent-color);
+}
+
+.hero-description {
+	font-size: clamp(1rem, 1.5vw, 1.25rem);
+	color: var(--text-sub);
+	margin-bottom: 56px;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hero-buttons {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	margin-bottom: 80px;
+}
+
+.hero-image-wrapper {
+	width: 100%;
+	max-width: 1100px;
+	height: auto;
+	aspect-ratio: 16/9;
+	margin: 0 auto;
+	background: var(--white);
+	border-radius: 16px;
+	box-shadow: 0 25px 80px -10px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(0, 0, 0, 0.03);
+	overflow: hidden;
+	padding: 20px;
+}
+
+/* Dummy UI Art */
+.dummy-ui {
+	width: 100%;
+	height: 100%;
+	background: #F1F5F9;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+}
+
+.ui-header {
+	height: 40px;
+	padding: 0 16px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	border-bottom: 1px solid #E2E8F0;
+	background: #fff;
+	border-radius: 8px 8px 0 0;
+}
+
+.dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+
+.red {
+	background: #EF4444;
+}
+
+.yellow {
+	background: #F59E0B;
+}
+
+.green {
+	background: #10B981;
+}
+
+.ui-body {
+	flex: 1;
+	display: flex;
+}
+
+.ui-sidebar {
+	width: 20%;
+	border-right: 1px solid #E2E8F0;
+	background: #fff;
+}
+
+.ui-main {
+	flex: 1;
+	background: #F8FAFC;
+}
+
+@media (max-width: 1024px) {
+	.hero-buttons {
+		flex-direction: column;
+		width: 100%;
+		max-width: 300px;
+	}
+
+	.btn-primary.large,
+	.btn-secondary.large {
+		width: 100%;
+		text-align: center;
+	}
+}
