@@ -83,3 +83,59 @@ ul {
 	padding: 14px 32px;
 	font-size: 1.05rem;
 }
+
+/* =========================================
+   Breadcrumb (パンくずリスト)
+   ========================================= */
+.breadcrumb {
+	width: 100%;
+	/* 固定ヘッダーの高さ(80px) + 余白 */
+	padding-top: calc(var(--header-height) + 12px);
+	padding-bottom: 12px;
+	background-color: var(--bg-color);
+	/* 背景色となじませる */
+}
+
+.breadcrumb-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	font-size: 0.85rem;
+	/* 本文より少し小さく */
+	color: var(--text-sub);
+}
+
+.breadcrumb-item {
+	display: inline-flex;
+	align-items: center;
+}
+
+/* リンクがある項目のスタイル */
+.breadcrumb-item a {
+	color: var(--text-sub);
+	opacity: 0.7;
+	transition: opacity 0.2s, color 0.2s;
+}
+
+.breadcrumb-item a:hover {
+	opacity: 1;
+	color: var(--accent-color);
+	text-decoration: underline;
+}
+
+/* 現在のページ（リンクなし・最後尾） */
+.breadcrumb-item.active {
+	font-weight: 500;
+	color: var(--text-main);
+	opacity: 1;
+	cursor: default;
+}
+
+/* 区切り文字（スラッシュ） */
+.breadcrumb-item:not(:last-child)::after {
+	content: '/';
+	margin: 0 12px;
+	color: #CCCCCC;
+	/* 非常に薄いグレーでノイズにならないように */
+	font-weight: 300;
+}
